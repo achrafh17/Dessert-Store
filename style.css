@@ -1,0 +1,427 @@
+body {
+  background-color: rgb(246, 240, 233);
+  font-family: "Red Hat Text", sans-serif;
+  padding-left: 20px;
+  padding-top: 20px;
+  height: 240vh;
+  display: flex;
+  gap: 80px;
+ 
+}
+h1 {
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+}
+.menu {
+  width: 68%;
+  height: 120vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 80px;
+  margin-top: 60px;
+}
+
+.menu-items {
+  line-height: 0.5;
+}
+
+/*Images --------------------------------------------------*/
+#menu-items-image {
+  width: 120%;
+  height: 60%;
+  border-radius: 10px;
+  z-index: -1;
+  position: relative;
+}
+/*ADD TO CART CONTAINER -------------------------------------------*/
+.add-to-cart {
+  width: 80%;
+  height: 50px;
+  margin-left: 20%;
+  margin-top: -30px;
+  border-radius: 30px;
+  border: 2px solid hsl(14, 65%, 9%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: white;
+  cursor: pointer;
+}
+/*BEFORE ADD TO CART-----------------------------*/
+.before-add-to-cart {
+  display: flex;
+  justify-items: center;
+}
+#add-to-cart {
+  font-weight: 600;
+  font-size: 20px;
+}
+#cart-logo {
+  width: 30px;
+}
+.add-to-cart:hover {
+  border: 2px solid hsl(12, 20%, 44%);
+  transition: 300ms;
+  scale: 0.99;
+}
+.add-to-cart:hover #add-to-cart {
+  color: #9b584c;
+  transition: 300ms;
+}
+/*After ADD TO CART -------------------------------------------*/
+.after-add-to-cart {
+  display: none;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  background-color: #c93b0f;
+  border-radius: 30px;
+  border: 2px solid #88280a;
+}
+#add-button {
+  border-radius: 100%;
+  background: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(213, 208, 208);
+  cursor: pointer;
+}
+#add-button:hover {
+  transform: scale(1.07);
+}
+#add-image {
+  color: rgb(213, 208, 208);
+}
+#decrement-button {
+  border-radius: 100%;
+  background: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(213, 208, 208);
+  cursor: pointer;
+}
+#decrement-button:hover {
+  transform: scale(1.07);
+}
+#decrement-image {
+  text-align: center;
+  color: rgb(213, 208, 208);
+}
+#number-of-articls {
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+}
+/* NAME DESCRIPTION PRICE FOR PRODUCT---------------------------------------*/
+#menu-items-name {
+  color: hsl(7, 20%, 60%);
+  font-size: 20px;
+  font-weight: 500;
+}
+#menu-items-description {
+  color: hsl(14, 65%, 9%);
+  font-size: 20px;
+  font-weight: 800;
+}
+#menu-items-price {
+  color: #b16651;
+  font-size: 25px;
+  font-weight: 600;
+}
+/*the cart of products selected-----------------------------------------------------*/
+.the-cart {
+  width: 23%;
+  height: fit-content;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 6px;
+  box-shadow: 9px 9px 10px rgb(189, 176, 176);
+}
+#the-cart-title {
+  font-size: 30px;
+  font-weight: 900;
+  color: #b16651;
+}
+#empty-list-image {
+  width: 150px;
+  margin-left: 25%;
+}
+#the-cart-message {
+  color: hsl(12, 20%, 44%);
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+}
+/* The Cart Page AFTER SELECTING ELEMENTS*/
+#nameOfProductSelected,
+#nameOfProductSelectedtwo,
+#nameOfProductSelectedthree,
+#nameOfProductSelectedfour,
+#nameOfProductSelectedfive,
+#nameOfProductSelectedsix,
+#nameOfProductSelectedseven,
+#nameOfProductSelectedeight,
+#nameOfProductSelectednine {
+  color: hsl(14, 65%, 9%);
+  font-weight: 600;
+  font-size: 20px;
+  text-align: start;
+}
+hr {
+  width: 95%;
+  margin-left: 2%;
+  margin-top: px;
+  background-color: hsl(7, 20%, 60%);
+}
+.containerpriceAndPricemultipleQuantity,
+.containerpriceAndPricemultipleQuantitytwo,
+.containerpriceAndPricemultipleQuantitythree,
+.containerpriceAndPricemultipleQuantityfour,
+.containerpriceAndPricemultipleQuantityfive,
+.containerpriceAndPricemultipleQuantitysix,
+.containerpriceAndPricemultipleQuantityseven,
+.containerpriceAndPricemultipleQuantityeight,
+.containerpriceAndPricemultipleQuantitynine {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0;
+  margin-top: -10px;
+  margin-left: 1%;
+}
+#DeclineButton,
+#DeclineButtontwo,
+#DeclineButtonthree,
+#DeclineButtonfour,
+#DeclineButtonfive,
+#DeclineButtonsix,
+#DeclineButtonseven,
+#DeclineButtoneight,
+#DeclineButtonnine {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background: none;
+  border: 2px solid hsl(12, 20%, 44%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+}
+#DeclineButton:focus,
+#DeclineButtontwo:focus,
+#DeclineButtonthree:focus,
+#DeclineButtonfour:focus,
+#DeclineButtonfive:focus,
+#DeclineButtonsix:focus,
+#DeclineButtonseven:focus,
+#DeclineButtoneight:focus,
+#DeclineButtonnine:focus {
+  scale: 0.9;
+}
+#declineLogo,
+#declineLogotwo,
+#declineLogothree,
+#declineLogothree,
+#declineLogofour,
+#declineLogofive,
+#declineLogosix,
+#declineLogoseven,
+#declineLogoeight,
+#declineLogonine {
+  width: 20px;
+  margin-left: -50%;
+}
+.PrixTotalAndYourOrder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#YourOrder {
+  color: hsl(14, 65%, 9%);
+  font-weight: 900;
+  font-size: 30px;
+}
+#yourorder {
+  color: hsl(12, 20%, 44%);
+  font-size: 20px;
+  font-weight: 600;
+}
+#ConfirmButton {
+  width: 80%;
+  height: 50px;
+  margin-left: 10%;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(13, 31%, 94%);
+  background-color: #88280a;
+  cursor: pointer;
+}
+#ConfirmButton:hover {
+  opacity: 0.94;
+}
+.OrderConfirmedCart {
+  width: 40%;
+  height: fit-content;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 0%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  line-height: 0.001;
+  display: none;
+}
+#OrderConfirmedLogo {
+  width: 60px;
+}
+#OrderConfirmedText {
+  font-size: 38px;
+  font-weight: 900;
+  color: hsl(14, 65%, 9%);
+}
+#wehopeenjoy {
+  font-size: 13px;
+  font-weight: 500;
+  color: hsl(7, 20%, 60%);
+}
+.OrderConfirmedCartContent {
+  width: 95%;
+  height: fit-content;
+  background-color: hsl(20, 50%, 98%);
+  border-radius: 10px;
+  margin-left: 3%;
+}
+.waffleContainer,
+.cremeContainer,
+.macaronContainer,
+.tiramisuContainer,
+.baklavaContainer,
+.pieContainer,
+.cakeContainer,
+.brownieContainer,
+.pannaContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  align-items: center;
+  line-height: 0.4;
+  gap: 20px;
+}
+#WffleImage,
+#CremeImage,
+#macaronImage,
+#tiramisuImage,
+#baklavaImage,
+#pieImage,
+#cakeImage,
+#brownieImage,
+#pannaImage {
+  width: 80px;
+  border-radius: 10px;
+}
+#NumberWffle,
+#NumberCreme,
+#NumberMacaron,
+#NumberTiramisu,
+#NumberBaklava,
+#NumberPie,
+#NumberCake,
+#NumberBrownie,
+#NumberPanna {
+  font-weight: 600;
+  color: hsl(12, 20%, 44%);
+  font-size: 20px;
+}
+#wafflepriceConfirmedOrder,
+#cremepriceConfirmedOrder,
+#macaronpriceConfirmedOrder,
+#tiramisupriceConfirmedOrder,
+#baklavapriceConfirmedOrder,
+#piepriceConfirmedOrder,
+#cakepriceConfirmedOrder,
+#browniepriceConfirmedOrder,
+#pannapriceConfirmedOrder {
+  font-weight: 600;
+  color: hsl(7, 20%, 60%);
+  font-size: 17px;
+}
+#totalwafflepriceconfirmed,
+#totalcremepriceconfirmed,
+#totalmacaronpriceconfirmed,
+#totaltiramisupriceconfirmed,
+#totalbaklavapriceconfirmed,
+#totalpiepriceconfirmed,
+#totalcakepriceconfirmed,
+#totalbrowniepriceconfirmed,#totalpannapriceconfirmed
+ {
+  font-weight: 600;
+  font-size: 20px;
+  color: hsl(14, 65%, 9%);
+  position: static;
+ margin-left: 60px;
+}
+
+#startNewOrder {
+    width: 80%;
+    height: 50px;
+    background-color: #88280a;
+    margin-left: 10%;
+    border-radius: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#startNewOrder:hover {
+    opacity: 0.9;
+}
+#startNewOrderText {
+    font-size: 20px;
+    font-weight: 500;
+    color: hsl(14, 25%, 72%);
+}
+.OrderTotalPriceContainer {
+    display: flex ;
+    align-items: center;
+    gap: 350px;
+  
+   
+   
+}
+#PriceTotalFinal {
+    font-size: 30px;
+    font-weight: 600;
+    color: hsl(14, 65%, 9%);
+}
+#YourOrderFinal {
+    font-size: 23px;
+    color: hsl(14, 65%, 9%);
+    font-weight: 600;
+}
